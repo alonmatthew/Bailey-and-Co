@@ -8,13 +8,19 @@ userRouter.route('/login')
   .get((req,res) => {
     res.render('login')
   })
-  // post request for actually logging in
+  .post(passport.authenticate('local-login', {
+  successRedirect: '/profile',
+  failureRedirect: '/login'
+  }))
 
 userRouter.route('/signup')
   .get((req,res) => {
     res.render('signup')
   })
-  // post request for actually signing up
+  .post(passport.authenticate('local-signup', {
+    successRedirect: '/profile',
+    failureRedirect: '/signup'
+  }))
 
 userRouter.get('/profile', (req,res) => {
   res.render('users/show')
@@ -25,10 +31,6 @@ userRouter.get('/profile', (req,res) => {
 //   req.logout()
 //   res.redirect('/')
 // })
-
-userRouter.get('/results', (req,res) => {
-  res.render('pages/search')
-})
 
 userRouter.get('/location/:id', (req,res) => {
   res.render('pages/location')
