@@ -137,6 +137,10 @@
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+.random {
+  border: 1px solid black;
+  height: 333px;
+}
 </style>
     <div class="row">
       <div class="col-lg-12">
@@ -161,13 +165,6 @@
             <input name="location" type="text" class="form-control" placeholder="Search for location" />
           </form>
 
-          <ul>
-            <% businesses.forEach((b) => { %>
-              <li>
-                <a href="/location/<%= b.id %>"><%= b.name %>(<%= b.location.city %>)</a>
-              </li>
-            <% }) %>
-          </ul>
         </div><!-- /input-group -->
       </div><!-- /.col-lg-12 -->
     </div><!-- /.row-->

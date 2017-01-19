@@ -1,3 +1,7 @@
-this needs data from the json object
-
-hi! i'm search results!
+<ul>
+  <% businesses.forEach((b) => { %>
+    <li>
+      <a href="/location/<%= b.id %>"><%= b.name %>(<%= b.location.city %>)</a>
+    </li>
+  <% }) %>
+</ul>
