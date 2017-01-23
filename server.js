@@ -69,5 +69,5 @@ app.use('/', userRoutes)
 
 // server
 app.listen(port, (err) => {
-  console.log(err||"Server listening on PORT: 3000")
+  console.log(err||"Server listening on PORT:" + port)
 })
