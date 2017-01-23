@@ -2,7 +2,7 @@
 
 ## **Description**
 
-Is your dog a constant companion? Does your furry friend go where you go? Pretty awesome, huh? However, have you ever visited a restaurant, hotel or event and learned the place isn't friendly for Fido? If so, we have the app for you!! 
+Is your dog a constant companion? Does your furry friend go where you go? Pretty awesome, huh? However, have you ever visited a restaurant, hotel or event and learned the place isn't friendly for Fido? If so, we have the app for you!!
 
 Where 2 Wag is an app that allows you to post how dog-friendly a place is and search for places where you and your dog can eat/leisure at peace!
 
@@ -61,12 +61,13 @@ Where 2 Wag is an app that allows you to post how dog-friendly a place is and se
 ## **Credit/References**
 * **Yelp API v2.0**: [https://www.yelp.com/developers/documentation/v2/overview]()
 * **Google Maps API**: [https://developers.google.com/maps/]()
+* **Trello Board**: [https://trello.com/b/4Wzc8d5h/doge-yelp]()
 
 ## **Feature Backlog**
 * Add tiles/containers for locations
 * Include prepulated lists of locations and present on Home Page as categories (eg. "Top Dog Friendly Coffee Shops", "Best Beaches for Dogs", etc)
-* 
+* User favorite locations
+*
 
 ## **Known Bugs**
-* Currently, a logged out user is able to rate/review. Need to implement login gateway in order for users to conribute content
-* Name isn't currently bound to user review
+* Currently, a logged out user is able to rate/review. Need to implement login gateway in order for users to contribute content
