@@ -21,7 +21,7 @@ const
   favicon = require('serve-favicon')
 
 
-
+  port = process.env.PORT || 3000
   mongoConnectionString = process.env.MONGODB_URL || 'mongodb://localhost/bailey-and-co'
 
 mongoose.connect(mongoConnectionString, (err) => {
@@ -68,6 +68,6 @@ app.use('/', userRoutes)
 
 
 // server
-app.listen(3000, (err) => {
+app.listen(port, (err) => {
   console.log(err||"Server listening on PORT: 3000")
 })
