@@ -17,7 +17,8 @@ const
   yelp = require('./factories/yelp.js'),
   yelpLocation = require('./factories/yelpLocation.js'),
   userRoutes = require('./routes/users.js'),
-  Review = require('./models/Review.js')
+  Review = require('./models/Review.js'),
+  favicon = require('serve-favicon')
 
 
 
@@ -35,6 +36,7 @@ const store = new MongoDBStore({
 });
 
 // middleware
+app.use(favicon(__dirname + '/public/images/logo-pic2.ico'))
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/public'))
 app.use(cookieParser())
